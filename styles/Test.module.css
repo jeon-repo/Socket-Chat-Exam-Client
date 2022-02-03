@@ -1,0 +1,17 @@
+.home {
+    width: 500px;
+    height: 500px;
+    background-color: #ededed;
+}
+
+.counter__text {
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button__area {
+    width: 100%;
+    text-align: center;
+}

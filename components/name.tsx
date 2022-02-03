@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 function Name() {
   const [loading, setLoading] = useState(true);
-  const [data, setData] = useState(process.env.NODE_ENV);
+  const [data, setData] = useState(process.env.NEXT_PUBLIC_TEST_WORD);
 
   useEffect(() => {
     console.log("2 -> ", data);
@@ -11,7 +11,7 @@ function Name() {
   if (loading) {
     setLoading(false);
     console.log("1 -> ", data);
-    setData("1234");
+    setData("변경됨");
   }
 
   return (

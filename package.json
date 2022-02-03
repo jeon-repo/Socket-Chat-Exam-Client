@@ -2,9 +2,9 @@
   "name": "next-exam",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build:prod": "next build",
+    "dev": "env-cmd -f .env.development next dev",
     "build:dev": "env-cmd -f .env.development next build",
+    "build:prod": "env-cmd -f .env.production next build",
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",

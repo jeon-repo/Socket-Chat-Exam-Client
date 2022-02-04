@@ -1,4 +1,5 @@
-import { callTestApi } from "@util/common/api-test";
+import { callTestApi } from "@api/api-test";
+import { changedWord } from "@util/common/constant";
 import { useState, useEffect } from "react";
 
 function Name() {
@@ -13,7 +14,7 @@ function Name() {
   if (loading) {
     setLoading(false);
     console.log("1 -> ", data);
-    setData("변경됨");
+    setData(changedWord);
   }
 
   return (

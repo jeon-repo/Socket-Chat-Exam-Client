@@ -34,7 +34,7 @@
         "pages/*"
       ],
       "@api/*": [
-        "pages/api/*"
+        "utils/api/*"
       ],
       "@style/*": [
         "styles/*"

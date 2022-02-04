@@ -1,3 +1,4 @@
+import { callTestApi } from "@util/common/api-test";
 import { useState, useEffect } from "react";
 
 function Name() {
@@ -6,6 +7,7 @@ function Name() {
 
   useEffect(() => {
     console.log("2 -> ", data);
+    callTestApi();
   }, [data]);
 
   if (loading) {

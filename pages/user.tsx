@@ -59,7 +59,7 @@ function User() {
         <h1>재사용 데이터</h1>
         <div className={style.counter__text}>{recycle}</div>
         <div className={style.button__area}>
-          <button type="button" onClick={upEventRecycle}>
+          <button className="up-type" type="button" onClick={upEventRecycle}>
             UP
           </button>
           <button type="button" onClick={downEventRecycle}>

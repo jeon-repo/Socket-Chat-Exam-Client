@@ -55,6 +55,12 @@
     "spaced-comment": "off", // 주석 쓰는 것 방지
     "no-unused-variable": "off", // 사용되지 않는 변수가 있는 것을 방지
     "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-explicit-any": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
     "react/prop-types": "off",
     "react/jsx-props-no-spreading": "off", // spread 연산자 사용을 방지
     "camelcase": "off", // camelcase만 써야함

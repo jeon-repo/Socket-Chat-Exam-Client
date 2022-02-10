@@ -6,17 +6,17 @@
       "dom.iterable",
       "es6"
     ],
-    "module": "esnext", // 모듈을 위한 코드 생성 설정
     "allowJs": true, // js 파일 컴파일 여부
     "incremental": true, // 마지막 컴파일의 프로젝트 그래프 정보를 저장
-    "removeComments": true, // 주석 삭제 여부
     "jsx": "preserve", // jsx 코드 생성 설정
     "noEmit": true, // 결과 파일 내보내기 여부
+    "module": "esnext", // 모듈을 위한 코드 생성 설정
+    "removeComments": true, // 주석 삭제 여부
     "esModuleInterop": true, // 모든 import에 대한 namespace 생성을 통해 CommonJS와 ES 모듈간의 상호 운용성이 생기게할 지 여부
-    "resolveJsonModule": true, // 확장자가 json인 모듈 사용 여부
     "isolatedModules": true, // 각 파일을 분리된 모듈파일로
-    "strict": true, // 모든 타입 확인 여부
     "moduleResolution": "node", // 모듈 해석 방법 설정
+    "resolveJsonModule": true, // 확장자가 json인 모듈 사용 여부
+    "strict": true, // 모든 타입 확인 여부
     "skipLibCheck": true, // 정적 파일의 타입 확인 여부
     "forceConsistentCasingInFileNames": true, // 같은 파일에 대한 일관되지 않은 참조 허용 여부
     "baseUrl": ".", // 기준 디렉토리

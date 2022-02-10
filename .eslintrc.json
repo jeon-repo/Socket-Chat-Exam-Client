@@ -36,9 +36,16 @@
     "react/prefer-stateless-function": 0,
     "react/jsx-one-expression-per-line": 0,
     "react/jsx-filename-extension": "off", // <> </>쓰는 것을 방지
-    "no-unused-expressions": 0,
+    // "no-unused-expressions": 0,
     "import/extensions": [
       "off"
+    ],
+    // "import/no-extraneous-dependencies": "off", // package.json에 없는 모듈에서 import 하는 것을 방지
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
     ],
     "import/no-unresolved": "off",
     "import/prefer-default-export": "off",
@@ -72,5 +79,9 @@
         ".js"
       ]
     }
-  }
+  },
+  "ignorePatterns": [
+    "tests",
+    "playwright.config.ts"
+  ]
 }

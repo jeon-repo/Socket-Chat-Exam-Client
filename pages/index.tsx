@@ -8,6 +8,11 @@ function Home() {
           <a>유저 화면으로 이동</a>
         </Link>
       </h1>
+      <h1>
+        <Link href="/mobile">
+          <a>모바일 화면으로 이동</a>
+        </Link>
+      </h1>
     </div>
   );
 }

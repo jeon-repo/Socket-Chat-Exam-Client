@@ -1,6 +1,6 @@
 // redux를 이용할 state마다 해당 파일 생성
-import { DECREASE_DISPOSA, INCREASE_DISPOSA } from "@store/actons/disposable";
 import { ActionProps, CountState } from "@store/types/state";
+import { DECREASE_DISPOSA, INCREASE_DISPOSA } from "@store/actons/disposable";
 
 const initialState: CountState = {
   disposable: 0,

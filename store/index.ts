@@ -1,4 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
+import { createWrapper, MakeStore } from "next-redux-wrapper";
 import {
   applyMiddleware,
   createStore,
@@ -7,10 +8,10 @@ import {
   Store,
   StoreEnhancer,
 } from "redux";
-import { createWrapper, MakeStore } from "next-redux-wrapper";
 import { composeWithDevTools } from "redux-devtools-extension";
 import { persistStore } from "redux-persist";
-import { rootReducer, persistedReducer } from "./reducers";
+
+import { rootReducer, persistedReducer } from "@store/reducers";
 
 // redux-sage를 위한 index, 기존 redux의 index는 reducers로 이동
 const bindMiddleware = (middleware: Middleware[]): StoreEnhancer => {

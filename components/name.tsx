@@ -1,6 +1,7 @@
+import { useState, useEffect } from "react";
+
 import { callTestApi } from "@api/api-test";
 import { changedWord } from "@util/common/constant";
-import { useState, useEffect } from "react";
 
 function Name() {
   const [loading, setLoading] = useState(true);

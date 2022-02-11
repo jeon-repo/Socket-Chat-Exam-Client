@@ -1,12 +1,13 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
-import Name from "@component/name";
-import style from "@style/Test.module.css";
-import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "@store/reducers";
 import { useCallback } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { css } from "@emotion/react";
+import style from "@style/Test.module.css";
+
+import { RootState } from "@store/reducers";
 import { disposableDown, disposableUp } from "@store/actons/disposable";
 import { recycleClear, recycleDown, recycleUp } from "@store/actons/recycle";
+import Name from "@component/name";
 
 // 컴포넌트 고유로 적용되는 css는 아래처럼 emotion을 통해 작성
 const skyBlud = css`

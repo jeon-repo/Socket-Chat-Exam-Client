@@ -6,7 +6,7 @@ const nextConfig = {
     return [
       {
         source: '/api/test-redirect/:path*',
-        destination: 'https://www.google.com/:path*',
+        destination: 'https://www.google.com/search?q=api-test/:path*',
         permanent: false
       },
     ];

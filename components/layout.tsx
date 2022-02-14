@@ -3,6 +3,7 @@ import style from "@style/layout.module.css";
 
 const { Header, Content, Footer } = Layout;
 
+// function LayoutCus({ children }) {
 function LayoutCus(props: any) {
   return (
     <Layout className="layout">
@@ -21,6 +22,7 @@ function LayoutCus(props: any) {
           <Breadcrumb.Item>List</Breadcrumb.Item>
           <Breadcrumb.Item>App</Breadcrumb.Item>
         </Breadcrumb>
+        {/* <div className={style.site_layout_content}>{children}</div> */}
         <div className={style.site_layout_content}>{props.children}</div>
       </Content>
       <Footer style={{ textAlign: "center" }}>

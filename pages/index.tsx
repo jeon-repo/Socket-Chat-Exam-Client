@@ -1,8 +1,11 @@
 import Link from "next/link";
 
+import Title from "@component/header/title";
+
 function Home() {
   return (
     <div>
+      <Title text="홈" />
       <h1>&lt;내부 페이지&gt;</h1>
       <h1>
         <Link href="/user">

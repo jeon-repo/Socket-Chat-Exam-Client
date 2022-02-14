@@ -8,6 +8,7 @@ import style from "@style/Test.module.css";
 import { RootState } from "@store/reducers";
 import { disposableDown, disposableUp } from "@store/actons/disposable";
 import { recycleClear, recycleDown, recycleUp } from "@store/actons/recycle";
+import Title from "@component/header/title";
 import Name from "@component/name";
 
 // 컴포넌트 고유로 적용되는 css는 아래처럼 emotion을 통해 작성
@@ -56,9 +57,10 @@ function User() {
 
   return (
     <div>
+      <Title text="유저" />
       <Name />
       <div css={skyBlud}>
-        <button type="button" onClick={() => onClick('1')}>
+        <button type="button" onClick={() => onClick("1")}>
           id 1로 이동
         </button>
       </div>

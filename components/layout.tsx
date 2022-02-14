@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Layout, Menu, Breadcrumb } from "antd";
 import style from "@style/layout.module.css";
 
@@ -12,6 +13,15 @@ function LayoutCus(props: any) {
         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["1"]}>
           {new Array(15).fill(null).map((_, index) => {
             const key = index + 1;
+            if (index === 0) {
+              return (
+                <Menu.Item key={key}>
+                  <Link href="/">
+                    <a>{`nav 홈`}</a>
+                  </Link>
+                </Menu.Item>
+              );
+            }
             return <Menu.Item key={key}>{`nav ${key}`}</Menu.Item>;
           })}
         </Menu>

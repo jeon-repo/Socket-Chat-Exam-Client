@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useRouter } from "next/router";
 import { css } from "@emotion/react";
 import style from "@style/Test.module.css";
 
@@ -18,6 +19,7 @@ function User() {
   const dispatch = useDispatch();
   const { disposable } = useSelector((state: RootState) => state.disposable);
   const { recycle } = useSelector((state: RootState) => state.recycle);
+  const router = useRouter();
 
   const upEventDispo = useCallback(() => {
     dispatch(disposableUp());
@@ -39,9 +41,27 @@ function User() {
     dispatch(recycleClear());
   }, [dispatch]);
 
+  const onClick = (id: string) => {
+    router.push(
+      {
+        pathname: `/user/${id}`,
+        query: {
+          id,
+          text: "테스트 텍스트",
+        },
+      },
+      `/user/${id}`,
+    );
+  };
+
   return (
     <div>
       <Name />
+      <div css={skyBlud}>
+        <button type="button" onClick={() => onClick('1')}>
+          id 1로 이동
+        </button>
+      </div>
       {/* 태그에 css 속성을 추가하기 위해서 최상단 코드 필요 */}
       <div css={skyBlud}>
         <h1>유저 화면</h1>

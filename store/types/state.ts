@@ -9,3 +9,7 @@ export interface CountState {
 export interface CountRecycleState {
     recycle: number
 }
+
+export interface IsViewState {
+    isView: boolean
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "className": "string",
+    "tagName": "string",
+    "id": "string01",
+    "height": "50",
+    "left": "100",
+    "top": "200",
+    "width": "50"
+  },
+  {
+    "className": "string",
+    "tagName": "string",
+    "id": "string02",
+    "height": "100",
+    "left": "200",
+    "top": "200",
+    "width": "100"
+  },
+  {
+    "className": "string",
+    "tagName": "string",
+    "id": "string03",
+    "height": "150",
+    "left": "400",
+    "top": "200",
+    "width": "150"
+  }
+]

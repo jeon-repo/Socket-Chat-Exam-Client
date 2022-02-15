@@ -20,7 +20,7 @@
   ﾤ index.tsx          // home view
 ﾤ public
   ﾤ image              // 이미지 파일
-ﾤ ~~redux~~ -> store       // redux 라이브러리와 이름 중복이라 변경
+ﾤ store                // redux store
   ﾤ actions            // action 선언
   ﾤ reducers           // state 별로 reducer 생성
   ﾤ types              // state interface 선언

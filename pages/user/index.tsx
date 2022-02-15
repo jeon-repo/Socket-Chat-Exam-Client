@@ -42,6 +42,7 @@ function User() {
     dispatch(recycleClear());
   }, [dispatch]);
 
+  // rewrite 기능을 포함
   const onClick = (id: string) => {
     router.push(
       {

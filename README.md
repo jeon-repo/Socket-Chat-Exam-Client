@@ -9,8 +9,7 @@
 /(root)
 ﾤ .storybook           // CDD(component driven development) 모듈
 ﾤ components           // ui
-  ﾤ *_css.ts           // 구조적 단위의 공통 style 선언 -> emotion js 사용
-  ﾤ *.tsx              // 컴포넌트 고유 style -> style jsx 사용
+  ﾤ *.tsx              // 컴포넌트 고유 style -> emotion js 사용
 ﾤ pages                // page module
   ﾤ api
   ﾤ _app.js            // global layout
@@ -28,6 +27,7 @@
 ﾤ stories              // story manager tsx 파일
 ﾤ styles               // (scope에 따른 style 적용 방식 다름)
   ﾤ globals.css        // _app.js에서 전역 style -> css import 사용
+  ﾤ *.module.css       // 구조적 단위의 공통 style 사용
 ﾤ tests
   ﾤ *.spec.ts          // 테스트 코드
 ﾤ utils                // 유틸

@@ -17,6 +17,11 @@ function Home() {
           <a>모바일 화면으로 이동</a>
         </Link>
       </h1>
+      <h1>
+        <Link href="/test-capture">
+          <a>테스트 캡처 화면으로 이동</a>
+        </Link>
+      </h1>
       <h1>&lt;외부 페이지&gt;</h1>
       <h1>
         <Link href="/api/test-redirect">

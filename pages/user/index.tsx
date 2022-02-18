@@ -6,8 +6,8 @@ import { css } from "@emotion/react";
 import style from "@style/Test.module.css";
 
 import { RootState } from "@store/reducers";
-import { disposableDown, disposableUp } from "@store/actons/disposable";
-import { recycleClear, recycleDown, recycleUp } from "@store/actons/recycle";
+import { disposableDown, disposableUp } from "@store/actions/disposable";
+import { recycleClear, recycleDown, recycleUp } from "@store/actions/recycle";
 import Title from "@component/header/title";
 import Name from "@component/name";
 

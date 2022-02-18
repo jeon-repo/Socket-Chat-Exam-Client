@@ -3,7 +3,7 @@ import {
   CLEAR_RECYCLE,
   DECREASE_RECYCLE,
   INCREASE_RECYCLE,
-} from "@store/actons/recycle";
+} from "@store/actions/recycle";
 import { ActionProps, CountRecycleState } from "@store/types/state";
 
 const initialState: CountRecycleState = {

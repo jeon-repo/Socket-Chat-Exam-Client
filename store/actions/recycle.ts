@@ -17,5 +17,5 @@ export const recycleDown = () => {
 export const recycleClear = () => {
   return {
     type: CLEAR_RECYCLE,
-  }
-}
+  };
+};

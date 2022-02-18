@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-import { offView, onView } from "@store/actons/isView";
+import { offView, onView } from "@store/actions/isView";
 import { RootState } from "@store/reducers";
 
 // 렌더링 최적화를 위해 행위자(버튼)를 부모 컴포넌트에서 분리

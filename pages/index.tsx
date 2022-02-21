@@ -33,6 +33,9 @@ function Home() {
           <a>rewrite 테스트 화면으로 이동</a>
         </Link>
       </h1>
+      <button className="wlm-button" type="button">
+        테스트 버튼
+      </button>
     </div>
   );
 }

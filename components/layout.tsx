@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Layout, Menu, Breadcrumb } from "antd";
 import style from "@style/layout.module.css";
 
+import { menuList } from "@component/menuList";
+
 const { Header, Content, Footer } = Layout;
 
 // function LayoutCus({ children }) {
@@ -10,19 +12,15 @@ function LayoutCus(props: any) {
     <Layout className="layout">
       <Header>
         <div className="logo" />
-        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["1"]}>
-          {new Array(15).fill(null).map((_, index) => {
-            const key = index + 1;
-            if (index === 0) {
-              return (
-                <Menu.Item key={key}>
-                  <Link href="/">
-                    <a>{`nav 홈`}</a>
-                  </Link>
-                </Menu.Item>
-              );
-            }
-            return <Menu.Item key={key}>{`nav ${key}`}</Menu.Item>;
+        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["home"]}>
+          {menuList.map((menu) => {
+            return (
+              <Menu.Item key={menu.id}>
+                <Link href={menu.url}>
+                  <a>{menu.title}</a>
+                </Link>
+              </Menu.Item>
+            );
           })}
         </Menu>
       </Header>

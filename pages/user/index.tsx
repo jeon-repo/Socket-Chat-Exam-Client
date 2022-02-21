@@ -9,7 +9,7 @@ import { RootState } from "@store/reducers";
 import { disposableDown, disposableUp } from "@store/actions/disposable";
 import { recycleClear, recycleDown, recycleUp } from "@store/actions/recycle";
 import Title from "@component/header/title";
-import Name from "@component/name";
+import Name from "@component/user/name";
 
 // 컴포넌트 고유로 적용되는 css는 아래처럼 emotion을 통해 작성
 const skyBlud = css`

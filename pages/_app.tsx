@@ -2,7 +2,7 @@ import type { AppProps } from "next/app";
 import "antd/dist/antd.css";
 
 import { wrapper } from "@store/index";
-import LayoutCus from "@component/layout";
+import LayoutCus from "@component/layout/layout";
 
 // ts는 const에 function을 선언하는 것을 좋아하지 않음 -> 에러 발생시킴
 function MyApp({ Component, pageProps }: AppProps) {

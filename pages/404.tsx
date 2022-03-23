@@ -1,4 +1,4 @@
-import Title from "@component/header/title";
+import Title from "@component/layout/header/title";
 
 function Page404() {
   return (

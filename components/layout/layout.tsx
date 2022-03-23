@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Layout, Menu, Breadcrumb } from "antd";
 import style from "@style/layout.module.css";
 
-import { menuList } from "@component/menuList";
+import { menuList } from "@component/layout/menuList";
 
 const { Header, Content, Footer } = Layout;
 

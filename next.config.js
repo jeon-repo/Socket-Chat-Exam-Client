@@ -5,20 +5,20 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/api/test-redirect/:path*',
-        destination: 'https://www.google.com/search?q=api-test/:path*',
-        permanent: false
+        source: "/api/test-redirect/:path*",
+        destination: "https://www.google.com/search?q=api-test/:path*",
+        permanent: false,
       },
     ];
   },
   async rewrites() {
     return [
       {
-        source: '/api/test-rewrite',
-        destination: `http://www.naver.com`
+        source: "/api/test-rewrite",
+        destination: `http://www.naver.com`,
       },
     ];
-  }
-}
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

@@ -1,6 +1,6 @@
 // redux를 이용할 state마다 해당 파일 생성
 import { ActionStrProps, ChatState } from "@store/types/state";
-import { SET_ROOMNAME, SET_USER } from "@store/actions/chat";
+import { RESET_USER, SET_ROOMNAME, SET_USER } from "@store/actions/chat";
 
 const initialState: ChatState = {
   user: "",
@@ -19,6 +19,11 @@ export default (state = initialState, action: ActionStrProps) => {
       return {
         ...state,
         roomName: action.str,
+      };
+    case RESET_USER:
+      return {
+        ...state,
+        user: (state.user = initialState.user),
       };
     default:
       return state;
